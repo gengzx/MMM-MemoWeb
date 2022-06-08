@@ -126,7 +126,7 @@ class Default extends Component {
       	return (
 			<div className="page-default">  
 					
-				<AppBar position="static">
+				<AppBar position="absolute">
 					<Toolbar variant="dense">魔镜备忘</Toolbar>
 				</AppBar>
 
@@ -154,11 +154,11 @@ class Default extends Component {
 							}
 						</List>
 					</div>
-					<div style={{height:120}}>
+					<div style={{height:140}}>
 						<TextField 
 							multiline
 							value={message}
-							rows={4}
+							rows={3}
 		   					label="备忘" 
 						   	variant="outlined" 
 						  	className="message" 
@@ -169,7 +169,7 @@ class Default extends Component {
 							<FormControlLabel value="WARNING" control={<Radio/>} label="重要" />
 						</RadioGroup>
 					</div>
-					<div style={{height:130}}>
+					<div style={{height:90}}>
 						<Fab color="primary" className="button send-button" onClick={this.onAdd} >
 							<SendIcon />
 						</Fab>
