@@ -1,0 +1,23 @@
+{
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "chrome": "60"
+          }
+        }
+      ],
+      "@babel/preset-react",
+      "mobx"
+    ]
+    //"plugins": ["dynamic-import-webpack"]
+
+    //"plugins": [["import", { "libraryName": "antd", "style": true }]]
+    //"plugins": [["import", { "style": "css", "libraryName": "antd" }]]
+    /*"plugins": [
+        "transform-runtime"
+    ]*/
+}
+
+
